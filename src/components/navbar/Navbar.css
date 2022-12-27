@@ -1,0 +1,54 @@
+/** Navbar.css **/
+.navbar {
+    background-color: #12151b;
+    justify-content: space-between;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0.25rem;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    height: 65%;
+    align-items: center;
+    display: flex;
+    padding: 0.5rem;
+    text-shadow: -1px 1px black;
+}
+
+.navbar li {
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.site-title {
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li:hover {
+    /* background-color: blue; */
+    box-shadow: 
+    inset 0 0 50px white,
+    inset 20px 0 80px rgb(0, 150, 100),
+    inset -20px 0 80px rgb(0, 150, 175),
+    inset 20px 0 300px rgb(0, 150, 132) ,
+    0 0 10px white,
+    10px 0 15px rgb(0, 150, 75),
+    -10px 0 15px rgb(0, 150, 75); 
+    transition: 0.3s;
+}
