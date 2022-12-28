@@ -1,6 +1,7 @@
 /** Navbar.css **/
 .navbar {
-    background-color: #12151b;
+    background-color: #181846;
+    /* background-color: #12151b; */
     justify-content: space-between;
     display: flex;
     gap: 2rem;
