@@ -1,26 +1,41 @@
 import "./Navbar.css";
 import React from 'react';
+import { Link } from 'react-router-dom';
+import GraphAnimation from "../graphAnimation/GraphAnimation.js";
+import Canvas from "../canvas/Canvas";
 
 
 const Navbar = () => {
     return (
-        <nav className='navbar'>
-            <a className="site-title" href='/'>
-                Home
-            </a>
+        <div>
+            <div className="graph-container">
+                <GraphAnimation />
+            </div>
+
+            <nav className='navbar'>
+                <Link className="site-title" to='/'>
+                    Home
+                </Link>
                 <ul>
                     <li>
-                        <a className='nav-item' href="/about">
+                        <Link className='nav-item' to="/">
                             About
-                        </a>
-                    </li> 
+                        </Link>
+                    </li>
                     <li>
-                        <a className='nav-item' href='/projects'>
+                        <Link className='nav-item' to='/projects'>
                             Projects
-                        </a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="nav-item" to="/contact">
+                            Contact
+                        </Link>
                     </li>
                 </ul>
-        </nav>
+            </nav>
+        </div>
+
     );
 }
 

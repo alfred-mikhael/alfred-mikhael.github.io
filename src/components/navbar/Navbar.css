@@ -1,14 +1,19 @@
 /** Navbar.css **/
 .navbar {
-    background-color: #181846;
+    background-color: #0b0f292a;
     /* background-color: #12151b; */
     justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.99;
     display: flex;
     gap: 2rem;
-    padding: 1rem;
+    padding-bottom: 15rem;
+    padding-top: 1rem;
     padding-left: 10rem;
     padding-right: 10rem;
-    align-content: center;
+    box-shadow: inset 0 -2px 1px 1px black;
 }
 
 .navbar ul {
@@ -17,9 +22,11 @@
     margin: 0;
     display: flex;
     gap: 2rem;
+    z-index: 2;
 }
 
 .nav-item {
+    opacity: 1;
     color: white;
     font-size: 2rem;
     text-decoration: none;
@@ -36,20 +43,41 @@
 }
 
 .site-title {
+    opacity: 1;
+    position: relative;
+    top: 0;
     font-size: 3rem;
     text-decoration: none;
     color: white;
 }
 
 .navbar li:hover {
+    opacity: 1;
     /* background-color: blue; */
     box-shadow: 
+    inset 0 0 50px #840032,
+    inset 20px 0 300px #840032,
+    0 0 10px white,
+    10px 0 15px #840032,
+    -10px 0 15px #840032;
+    /* box-shadow: 
     inset 0 0 50px white,
     inset 20px 0 80px rgb(0, 150, 100),
     inset -20px 0 80px rgb(0, 150, 175),
     inset 20px 0 300px rgb(0, 150, 132) ,
     0 0 10px white,
     10px 0 15px rgb(0, 150, 75),
-    -10px 0 15px rgb(0, 150, 75); 
+    -10px 0 15px rgb(0, 150, 75);  */
     transition: 0.3s;
+}
+
+#canvas {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.graph-container {
+    position: absolute;
+    z-index: 0;
 }

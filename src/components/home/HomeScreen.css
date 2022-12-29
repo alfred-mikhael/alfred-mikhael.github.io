@@ -1,3 +1,33 @@
+.body {
+    position: relative;
+}
+
+
+.slide-component {
+    animation-name: slideAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+img {
+    max-width: 128px;
+    max-height: 128px;
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0%;
+        transform: translateY(25%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
 .Title {
     padding: 0;
     margin: 0;
@@ -6,28 +36,13 @@
 }
 
 .my-name {
-    color: aquamarine;
-}
+    color: #E59500;
+} 
 
-.sub-text {
-    color: #a3b5d6;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.table {
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.icon-button { 
-    width: 80px; 
+.icon-button {
+    width: 80px;
     height: 80px;
     margin-top: none;
-    background-color: #282c34;
     border: none;
     border-radius: 20%;
     display: inline-flex;
@@ -37,10 +52,10 @@
     margin-bottom: 10px;
 }
 
-.icon-button:hover { 
-    width: 80px; 
+.icon-button:hover {
+    width: 80px;
     height: 80px;
-    background-color: #515968;
+    background-color: #0b0f29;
     border: none;
     display: inline-flex;
     align-items: center;
@@ -51,7 +66,7 @@
 
 ion-icon {
     font-size: 64px;
-    color: aquamarine;
+    color: #E59500;
 }
 
 .button-row {
@@ -69,3 +84,16 @@ ion-icon {
     display: inline-grid;
 }
 
+
+.grid-icon {
+    display: inline-grid;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.grid-icon:hover {
+    transform: scale(1.5);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: 0.5s;
+}

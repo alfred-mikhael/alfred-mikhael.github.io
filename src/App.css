@@ -3,17 +3,28 @@
 }
 
 .App-header {
-  background-color: #000040;
+  background-color: #002642;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #E5DADA;
+  width: 100%;
+  position: relative;
+}
+
+.App-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.navbar-container {
+  position: relative;
 }
 

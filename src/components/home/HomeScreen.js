@@ -1,26 +1,40 @@
 import "./HomeScreen.css";
 import Card from "../card/Card.js";
-import reactLogo from "../../images/favicon.ico";
+import reactLogo from "../../images/React-icon.svg.png";
+import htmlLogo from "../../images/html5.png";
+import cssLogo from "../../images/CSS3_logo.svg.png";
+import pythonLogo from "../../images/Python-logo-notext.svg.png";
+import jsLogo from "../../images/jslogo.jpg";
+import gitLogo from "../../images/Git-Icon-1788C.png";
+import cppLogo from "../../images/ISO_C++_Logo.svg.png";
+import flutterLogo from "../../images/Google-flutter-logo.png";
+import javaLogo from "../../images/java-logo-1.png";
+import firebaseLogo from "../../images/firebase-logo.png";
+import latexLogo from "../../images/LaTeX_logo.png"
 
 
 const HomeScreen = () => {
     return (
         <div>
-            <h1 className="Title">
-                My name is <span className="my-name">Alfred Mikhael.</span>
-            </h1>
+            <div className="slide-component">
+                <h1 className="Title">
+                    My name is <span className="my-name">Alfred Mikhael.</span>
+                </h1>
+            </div>
 
-            <p className="sub-text">
-                Mathematics and Computer Science student at the University of Toronto
-                interested in theoretical computer science, machine learning, and topology.
-            </p>
-
-            <h1>
-                About Me
-            </h1>
-            <p>
-                I'm Alfred Mikhael, aspiring software developer, university student, and lifeguard trainer.
-            </p>
+            <div className="slide-component">
+                <p>
+                    I'm Alfred Mikhael. A university student at the University of Toronto, studying math and computer science.
+                    I have a particular interest in theoretical computer science, machine learning, and topology. I hope to
+                    pursue post-graduate studies in math once I finish my degree, specializing in either topology or theoretical computer science;
+                    I'm not sure yet!
+                </p>
+                <p>
+                    I also work part-time at the City of Mississauga, as a swim instructor, lifeguard, first aid instructor, and deck coordinator.
+                    This has helped me to discover one more passion of mine, which is teaching. Not only am I able to connect with students, I feel that
+                    teaching helps me communicate my ideas better and overall gives me a deeper understanding of what I teach.
+                </p>
+            </div>
 
             <h1>
                 My Projects
@@ -46,17 +60,38 @@ const HomeScreen = () => {
                 Technical Skills
             </h1>
             <grid>
-                <div className="grid-item">
-                    <ion-icon style={{color: "orange"}} name="logo-html5"></ion-icon>
+                <div className="grid-icon">
+                    <img src={htmlLogo} alt=""></img>
                 </div>
-                <div className="grid-item">
-                    <ion-icon style={{color: "#0f5fff"}}name="logo-css3"></ion-icon>
+                <div className="grid-icon">
+                    <img src={cssLogo} alt=""></img>
                 </div>
-                <div className="grid-item">
-                    <ion-icon name="logo-python"></ion-icon>
+                <div className="grid-icon">
+                    <img src={pythonLogo} alt=""></img>
                 </div>
-                <div className="grid-item">
+                <div className="grid-icon">
                     <img src={reactLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={jsLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={javaLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={cppLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={flutterLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={gitLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={firebaseLogo} alt=""></img>
+                </div>
+                <div className="grid-icon">
+                    <img src={latexLogo} alt=""></img>
                 </div>
             </grid>
 
@@ -72,7 +107,7 @@ const HomeScreen = () => {
                 </p>
                 <ul>
                     <li>
-                        CSC240: Enriched introduction to the Theory of Computation
+                        CSC240: Enriched introduction to the Theory of Compuicontion
                     </li>
                     <li>
                         CSC265: Enriched Data Structures and Algorithms
@@ -85,7 +120,6 @@ const HomeScreen = () => {
                     </li>
                 </ul>
             </Card>
-
             < Card header={<h3> John Fraser Secondary School </h3>} topRight={<h3>2017- 2021</h3>}>
                 <p> Ontario Secondary School Diploma</p>
             </Card>
