@@ -24,7 +24,7 @@ const HomeScreen = () => {
 
             <div className="slide-component">
                 <p>
-                    I'm Alfred Mikhael. A university student at the University of Toronto, studying math and computer science.
+                    A university student at the University of Toronto, studying math and computer science.
                     I have a particular interest in theoretical computer science, machine learning, and topology. I hope to
                     pursue post-graduate studies in math once I finish my degree, specializing in either topology or theoretical computer science;
                     I'm not sure yet!
@@ -36,26 +36,6 @@ const HomeScreen = () => {
                 </p>
             </div>
 
-            <h1>
-                My Projects
-            </h1>
-            <div className="grid">
-                <div className="grid-item">
-                    <Card>
-                        <p>Project 1</p>
-                    </Card>
-                </div>
-                <div className="grid-item">
-                    <Card>
-                        <p>Project 2</p>
-                    </Card>
-                </div>
-                <div className="grid-item">
-                    <div className="card">
-                        <p> Project 3 </p>
-                    </div>
-                </div>
-            </div>
             <h1>
                 Technical Skills
             </h1>

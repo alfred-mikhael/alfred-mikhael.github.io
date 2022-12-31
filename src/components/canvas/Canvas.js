@@ -1,12 +1,12 @@
-  import React, { useRef, useEffect } from 'react'
-  
-  const PROBABILITY = 0.20;
+  import React, { useRef, useEffect } from 'react';
+  import "./Canvas.css";
+
+  const PROBABILITY = 0.2;
 
   const Canvas = props => {
     
     const { draw, graph, ...rest } = props
     const canvasRef = useRef(null)
-    
     useEffect(() => {
       
       const canvas = canvasRef.current
@@ -18,10 +18,15 @@
       
       const render = () => {
         frameCount++
-        if (frameCount > 500) {
-            graph.generateEdges(PROBABILITY)
-            frameCount = 0
-        }
+        // if (frameCount > 500) {
+        //     graph.generateEdges(PROBABILITY)
+        //     frameCount = 0
+        // }
+        // if (frameCount > 20) {
+        //   graph.changeEdges(10);
+        //   frameCount = 0;
+        // }
+        graph.changeEdges(4);
         draw(context, graph)
         animationFrameId = window.requestAnimationFrame(render)
       }

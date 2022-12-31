@@ -4,11 +4,14 @@
 
 
 .slide-component {
+    opacity: 0;
     animation-name: slideAnimation;
     animation-timing-function: ease-in-out;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-direction: normal;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
 }
 
 img {

@@ -1,0 +1,13 @@
+img {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 75vw;
+}
+
+.grid-item {
+    display: inline-grid;
+}
