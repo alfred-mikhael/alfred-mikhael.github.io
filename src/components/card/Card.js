@@ -24,7 +24,7 @@ const Card = ({ header, topRight, children }) => {
         return () => window.removeEventListener("resize", handleResize);
       }, []);
 
-    if (dimensions["width"] > 620) {
+    if (dimensions["width"] > 580) {
         return (
             <div className="card">
                 <div className="card-header">

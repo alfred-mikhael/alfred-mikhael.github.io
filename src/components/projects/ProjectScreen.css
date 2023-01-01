@@ -3,6 +3,10 @@
     max-height: 64px;
 }
 
+.a {
+    text-decoration: none;
+}
+
 .grid {
     display: grid;
     /* grid-template-columns: 25vw 25vw 25vw; */

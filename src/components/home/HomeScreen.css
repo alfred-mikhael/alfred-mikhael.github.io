@@ -3,21 +3,9 @@
     width: 100vw;
 }
 
-
 .slide-component {
     opacity: 0;
     animation-name: slideAnimation;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-delay: 150ms;
-    animation-fill-mode: forwards;
-}
-
-.slide-sideways-component {
-    opacity: 0;
-    animation-name: slideSidewaysAnimation;
     animation-timing-function: ease-in-out;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -40,18 +28,6 @@
     100% {
         opacity: 100%;
         transform: translateY(0%);
-    }
-}
-
-@keyframes slideSidewaysAnimation {
-    0% {
-        opacity: 0%;
-        transform: translateX(25%);
-    }
-
-    100% {
-        opacity: 100%;
-        transform: translateX(0%);
     }
 }
 

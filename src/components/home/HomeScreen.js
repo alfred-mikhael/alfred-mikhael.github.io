@@ -42,7 +42,7 @@ const HomeScreen = () => {
                     Technical Skills
                 </h1>
             </div>
-            <div className="slide-sideways-component">
+            <div>
                 <div>
                     <div className="grid-icon">
                         <img className="technical-skill-icon" src={htmlLogo} alt=""></img>
