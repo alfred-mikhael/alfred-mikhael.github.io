@@ -10,7 +10,8 @@ import cppLogo from "../../images/ISO_C++_Logo.svg.png";
 import flutterLogo from "../../images/Google-flutter-logo.png";
 import javaLogo from "../../images/java-logo-1.png";
 import firebaseLogo from "../../images/firebase-logo.png";
-import latexLogo from "../../images/LaTeX_logo.png"
+import latexLogo from "../../images/LaTeX_logo.png";
+import rLogo from "../../images/Rlogo.png";
 
 
 const HomeScreen = () => {
@@ -36,44 +37,51 @@ const HomeScreen = () => {
                 </p>
             </div>
 
-            <h1>
-                Technical Skills
-            </h1>
-            <grid>
-                <div className="grid-icon">
-                    <img src={htmlLogo} alt=""></img>
+            <div className="slide-component">
+                <h1>
+                    Technical Skills
+                </h1>
+            </div>
+            <div className="slide-sideways-component">
+                <div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={htmlLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={cssLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={pythonLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={reactLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={jsLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={javaLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={cppLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={flutterLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={gitLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={firebaseLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={latexLogo} alt=""></img>
+                    </div>
+                    <div className="grid-icon">
+                        <img className="technical-skill-icon" src={rLogo} alt=""></img>
+                    </div>
                 </div>
-                <div className="grid-icon">
-                    <img src={cssLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={pythonLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={reactLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={jsLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={javaLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={cppLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={flutterLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={gitLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={firebaseLogo} alt=""></img>
-                </div>
-                <div className="grid-icon">
-                    <img src={latexLogo} alt=""></img>
-                </div>
-            </grid>
+            </div>
 
             <h1>
                 Education

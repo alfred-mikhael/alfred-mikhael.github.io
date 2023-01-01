@@ -1,13 +1,48 @@
-img {
+.project-stack-icon {
     max-width: 64px;
     max-height: 64px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 75vw;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 50vh;
 }
 
 .grid-item {
     display: inline-grid;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #E5DADA;
+}
+
+.description-text {
+    font-size: 1.5rem;
+}
+
+.fade-component {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.learning-list {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
 }

@@ -2,7 +2,6 @@ import "./Navbar.css";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GraphAnimation from "../graphAnimation/GraphAnimation.js";
-import Canvas from "../canvas/Canvas";
 
 
 const Navbar = () => {

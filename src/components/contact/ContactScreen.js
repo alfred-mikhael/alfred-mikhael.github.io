@@ -1,21 +1,15 @@
-import { useState } from 'react';
-import Card from '../card/Card';
 import "./ContactScreen.css";
+import Card from "../card/Card.js";
 
 const ContactScreen = () => {
-
-    const [open, setOpen] = useState(false);
-
     return (
         <div>
-            <button className="dropdown-button" onClick={() => { setOpen((isOpen) => !isOpen) }}>
-                <Card header={<h1>Resume</h1>} topRight={<ion-icon name="chevron-down-outline"></ion-icon>}></Card>
-            </button>
-            {open &&
-                <div>
-                    my resume is here
-                </div>
-            }
+            <a className="resume-button" href="https://drive.google.com/file/d/1XTJYSi2vZoo_egdp0Ji9FV2XqFWH8X-9/view?usp=sharing" target="_blank" rel="noreferrer">
+                <Card>
+                    <h1>Resume</h1>
+                </Card>
+            </a>
+
             <div className="button-row">
                 <h1 className="card-header">
                     Contact information
