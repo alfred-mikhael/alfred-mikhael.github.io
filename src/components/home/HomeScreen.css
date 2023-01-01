@@ -27,8 +27,8 @@
 }
 
 .technical-skill-icon {
-    max-width: 128px;
-    max-height: 128px;
+    max-width: 6rem;
+    max-height: 6rem;
 }
 
 @keyframes slideAnimation {

@@ -35,7 +35,8 @@ const ProjectScreen = () => {
                                     </div>
                                     <p className="description-text">
                                         A personal portfolio I made using React.js, CSS, HTML and javascript. It's
-                                        the website you're seeing right now! My first experience with web development.
+                                        the website you're seeing right now! My first experience with web development. The website 
+                                        is responsive, so it works on both computers as well as mobile devices. 
                                     </p>
                                 </div>
                             </Card>
@@ -53,7 +54,8 @@ const ProjectScreen = () => {
                                     </div>
                                     <p className="description-text">
                                         A chat web app made entirely in Java, which has speech-to-text, autotranaslation,
-                                        and allows multiple accounts to add each other as contacts.
+                                        and allows multiple accounts to add each other as contacts. This was made in a group 
+                                        with six others as the final project for CSC207.
                                     </p>
                                 </div>
                             </Card>
@@ -86,7 +88,8 @@ const ProjectScreen = () => {
                                     </div>
                                     <p className="description-text">
                                         An app that aggregates data from over 5000 news articles using Scrapy, analyses the
-                                        language using NLTK, then visualizes the data using Plotly.
+                                        language using NLTK, then visualizes the data using Plotly. This was made with a group of 3 others 
+                                        as the final project of CSC111.
                                     </p>
                                 </div>
                             </Card>

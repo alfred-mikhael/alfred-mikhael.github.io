@@ -9,11 +9,11 @@
     z-index: 1;
     opacity: 0.99;
     display: flex;
-    gap: 2rem;
+    gap: 5%;
     padding-bottom: 15rem;
     padding-top: 1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 5%;
+    padding-right: 5%;
     box-shadow: inset 0 -2px 1px 1px black;
 }
 
@@ -22,8 +22,9 @@
     padding: 0.25rem;
     margin: 0;
     display: flex;
-    gap: 2rem;
+    gap: 5%;
     z-index: 2;
+    overflow: scroll;
 }
 
 .nav-item {

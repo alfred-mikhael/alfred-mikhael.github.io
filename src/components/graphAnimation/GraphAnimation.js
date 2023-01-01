@@ -1,4 +1,5 @@
 import Canvas from "../canvas/Canvas.js";
+import { useEffect, useState } from "react";
 import "./GraphAnimation.css";
 
 const PROBABILITY = 0.2;
@@ -72,6 +73,28 @@ class RandomGraph extends Graph {
 }
 
 const GraphAnimation = () => {
+    const [dimensions, setDimensions] = useState({
+        width: undefined,
+        height: undefined,
+    });
+
+    useEffect(() => {
+        // Handler to call on window resize
+        function handleResize() {
+          // Set window width/height to state
+          setDimensions({
+            width: window.screen.width,
+            height: window.screen.height,
+          });
+        }
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+        // Call handler right away so state gets updated with initial window size
+        handleResize();
+        // Remove event listener on cleanup
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
+
     var vertices = [];
     var rows = Math.floor(vw / ROWGAP);
     var cols = Math.floor(vh / COLGAP);
