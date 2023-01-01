@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.51adadd4.css",
-    "main.js": "/static/js/main.42c9c2d1.js",
+    "main.css": "/static/css/main.544c92b6.css",
+    "main.js": "/static/js/main.6deba7f8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.8a6fc0a24a800d1e0f4a.png",
     "static/media/Python-logo-notext.svg.png": "/static/media/Python-logo-notext.svg.82efb64f8698a267f8bf.png",
@@ -14,12 +14,12 @@
     "static/media/LaTeX_logo.png": "/static/media/LaTeX_logo.ae4ba61e17f2b1c1f96c.png",
     "static/media/firebase-logo.png": "/static/media/firebase-logo.a4156cb67d6d0676cffc.png",
     "index.html": "/index.html",
-    "main.51adadd4.css.map": "/static/css/main.51adadd4.css.map",
-    "main.42c9c2d1.js.map": "/static/js/main.42c9c2d1.js.map",
+    "main.544c92b6.css.map": "/static/css/main.544c92b6.css.map",
+    "main.6deba7f8.js.map": "/static/js/main.6deba7f8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51adadd4.css",
-    "static/js/main.42c9c2d1.js"
+    "static/css/main.544c92b6.css",
+    "static/js/main.6deba7f8.js"
   ]
 }
