@@ -20,6 +20,7 @@
 .navbar ul {
     list-style: none;
     padding: 0.25rem;
+    width: 26rem;
     margin: 0;
     display: flex;
     gap: 5%;
