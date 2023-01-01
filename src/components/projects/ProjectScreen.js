@@ -17,7 +17,7 @@ const ProjectScreen = () => {
                     My Projects
                 </h1>
                 <div className="grid">
-                    <a href="https://github.com/SlothfulAlfred/portfolio" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/SlothfulAlfred/SlothfulAlfred.github.io" target="_blank" rel="noreferrer">
                         <div className="grid-item">
                             <Card header={<h3>Personal Portfolio</h3>}>
                                 <div>
