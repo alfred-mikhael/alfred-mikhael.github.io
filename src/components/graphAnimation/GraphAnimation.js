@@ -1,4 +1,5 @@
 import Canvas from "../canvas/Canvas.js";
+import "./GraphAnimation.css";
 
 const PROBABILITY = 0.2;
 const vw = window.screen.width;
