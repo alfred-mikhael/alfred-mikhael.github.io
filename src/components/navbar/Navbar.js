@@ -28,7 +28,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link className="nav-item" to="/contact">
-                            Contact
+                            Resume
                         </Link>
                     </li>
                 </ul>

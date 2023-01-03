@@ -20,12 +20,12 @@
 .navbar ul {
     list-style: none;
     padding: 0.25rem;
-    width: 26rem;
+    width: 30rem;
     margin: 0;
     display: flex;
     gap: 5%;
     z-index: 2;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 .nav-item {
