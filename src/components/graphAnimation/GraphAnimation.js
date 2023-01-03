@@ -4,7 +4,7 @@ import "./GraphAnimation.css";
 
 const PROBABILITY = 0.2;
 const vw = window.innerWidth * 1.5;
-const vh = window.innerHeight * 1.5;
+const vh = window.innerHeight * 0.7;
 const ROWGAP = 30;
 const COLGAP = 18;
 const LINEWIDTH = 3;
