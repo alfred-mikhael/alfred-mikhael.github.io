@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import "./GraphAnimation.css";
 
 const PROBABILITY = 0.2;
-const vw = window.screen.width;
-const vh = window.screen.height;
+const vw = window.innerWidth * 1.5;
+const vh = window.innerHeight * 1.5;
 const ROWGAP = 30;
 const COLGAP = 18;
 const LINEWIDTH = 3;
