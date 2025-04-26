@@ -7,11 +7,12 @@
     opacity: 0;
     animation-name: slideAnimation;
     animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-delay: 150ms;
     animation-fill-mode: forwards;
+    text-align: left;
 }
 
 .technical-skill-icon {
@@ -22,7 +23,7 @@
 @keyframes slideAnimation {
     0% {
         opacity: 0%;
-        transform: translateY(25%);
+        transform: translateY(5%);
     }
 
     100% {
@@ -34,7 +35,7 @@
 .Title {
     padding: 0;
     margin: 0;
-    font-size: 6.5rem;
+    font-size: 2.5rem;
     /* color: #a3b5d6; */
 }
 
@@ -78,10 +79,13 @@ ion-icon {
     padding: none;
 }
 
-.grid {
+.tech-skills {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 25vw 25vw 25vw;
+    justify-content: space-between;
+    justify-items: left;
+    grid-column-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    margin-right: 10%;
 }
 
 .grid-item {
@@ -97,7 +101,5 @@ ion-icon {
 
 .grid-icon:hover {
     transform: scale(1.5);
-    margin-left: 2rem;
-    margin-right: 2rem;
     transition: 0.5s;
 }

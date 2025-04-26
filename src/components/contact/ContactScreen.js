@@ -1,13 +1,10 @@
 import "./ContactScreen.css";
-import Card from "../card/Card.js";
 
 const ContactScreen = () => {
     return (
         <div>
             <a className="resume-button" href="https://drive.google.com/file/d/1XTJYSi2vZoo_egdp0Ji9FV2XqFWH8X-9/view?usp=sharing" target="_blank" rel="noreferrer">
-                <Card>
-                    <h1>Resume</h1>
-                </Card>
+
             </a>
 
             <div className="button-row">

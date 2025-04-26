@@ -1,0 +1,12 @@
+.education-details {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    margin-bottom: 1em;
+    width: vw;
+}
+
+.education-details-secondary {
+    font-size: 0.8em;
+    color: rgb(73, 73, 73);
+}

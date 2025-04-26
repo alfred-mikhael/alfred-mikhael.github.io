@@ -1,24 +1,25 @@
 import "./Navbar.css";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GraphAnimation from "../graphAnimation/GraphAnimation.js";
 
 
 const Navbar = () => {
     return (
         <div>
-            <div className="graph-container">
+            {/* <div className="graph-container">
                 <GraphAnimation />
-            </div>
+            </div> */}
 
             <nav className='navbar'>
-                <Link className="site-title" to='/'>
-                    Home
-                </Link>
-                <ul>
+            <ul>
                     <li>
                         <Link className='nav-item' to="/">
                             About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="nav-item" to="/experience">
+                            Experience
                         </Link>
                     </li>
                     <li>
@@ -28,7 +29,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link className="nav-item" to="/contact">
-                            Resume
+                            Contact
                         </Link>
                     </li>
                 </ul>
