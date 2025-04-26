@@ -19,21 +19,16 @@ const HomeScreen = () => {
         <div>
             <div className="slide-component">
                 <h1 className="Title">
-                    My name is <span className="my-name">Alfred Mikhael.</span>
+                    My name is <span className="my-name">Alfred Mikhael</span>
                 </h1>
             </div>
 
             <div className="slide-component">
                 <p>
-                    A university student at the University of Toronto, studying math and computer science.
-                    I have a particular interest in theoretical computer science, machine learning, and topology. I hope to
-                    pursue post-graduate studies in math once I finish my degree, specializing in either topology or theoretical computer science;
-                    I'm not sure yet!
-                </p>
-                <p>
-                    I also work part-time at the City of Mississauga, as a swim instructor, lifeguard, first aid instructor, and deck coordinator.
-                    This has helped me to discover one more passion of mine, which is teaching. Not only am I able to connect with students, I feel that
-                    teaching helps me communicate my ideas better and overall gives me a deeper understanding of what I teach.
+                    I am an incoming master's student in Cheriton school of computer science at the University of Waterloo studying theoretical computer science and spectral graph theory under the supervision of
+                    Prof. Lap Chi Lau. 
+                    Before that, I was an undergraduate at the University of Toronto where I studied math and computer science, and did research under the 
+                    supervision of Prof. Swastik Kopparty and Prof. Aleskandar Nikolov.
                 </p>
             </div>
 
