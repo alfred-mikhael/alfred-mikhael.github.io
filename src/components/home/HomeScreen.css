@@ -3,15 +3,8 @@
     width: 100vw;
 }
 
-.slide-component {
-    opacity: 0;
-    animation-name: slideAnimation;
-    animation-timing-function: ease-in-out;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-delay: 150ms;
-    animation-fill-mode: forwards;
+.home-page-content {
+    padding-bottom: 60px;
     text-align: left;
 }
 
@@ -20,22 +13,10 @@
     max-height: 6rem;
 }
 
-@keyframes slideAnimation {
-    0% {
-        opacity: 0%;
-        transform: translateY(5%);
-    }
-
-    100% {
-        opacity: 100%;
-        transform: translateY(0%);
-    }
-}
-
 .Title {
     padding: 0;
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.5em;
     /* color: #a3b5d6; */
 }
 
@@ -43,44 +24,13 @@
     color: #E59500;
 } 
 
-.icon-button {
-    width: 80px;
-    height: 80px;
-    margin-top: none;
-    border: none;
-    border-radius: 20%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: none;
-    margin-bottom: 10px;
-}
-
-.icon-button:hover {
-    width: 80px;
-    height: 80px;
-    background-color: #0b0f29;
-    border: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: none;
-    margin-bottom: 10px;
-}
-
-ion-icon {
-    font-size: 64px;
-    color: #E59500;
-    pointer-events: none;
-}
-
 .tech-skills {
     display: grid;
     justify-content: space-between;
     justify-items: left;
     grid-column-gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    margin-right: 10%;
+    max-width: 80%;
 }
 
 .grid-item {
@@ -90,11 +40,35 @@ ion-icon {
 
 .grid-icon {
     display: inline-grid;
-    margin: 10px;
+    margin: 5%;
     transition: 0.5s;
+    scale: 0.8;
+    align-self: center;
 }
 
 .grid-icon:hover {
     transform: scale(1.5);
     transition: 0.5s;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.cover-photo {
+    max-width: 30vw;
+    max-height: 30vh;
+    align-self: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .grid-icon {
+        scale: 0.6;
+    }
+
+    .tech-skills {
+        grid-column-gap: 3em;
+    }
 }
