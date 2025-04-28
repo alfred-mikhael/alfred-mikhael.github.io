@@ -24,7 +24,7 @@ const HomeScreen = () => {
     return (
         <div className="home-page">
             <div className="home-page-content">
-                    <h1 className="Title">
+                    <h1 className="title">
                         My name is <span className="my-name">Alfred Mikhael</span>
                     </h1>   
 
