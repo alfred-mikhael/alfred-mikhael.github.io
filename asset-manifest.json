@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.f41edc01.css",
-    "main.js": "/static/js/main.38b50a16.js",
+    "main.css": "/static/css/main.a285c464.css",
+    "main.js": "/static/js/main.1f900f37.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/cover-photo.jpg": "/static/media/cover-photo.98ba9239d605bbaaec8a.jpg",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.8a6fc0a24a800d1e0f4a.png",
     "static/media/Python-logo-notext.svg.png": "/static/media/Python-logo-notext.svg.82efb64f8698a267f8bf.png",
     "static/media/ISO_C++_Logo.svg.png": "/static/media/ISO_C++_Logo.svg.5185ce2f4c945505ee4f.png",
-    "static/media/cover-photo.jpg": "/static/media/cover-photo.7b753986d1a61c610a27.jpg",
     "static/media/java-logo-1.png": "/static/media/java-logo-1.fdabd4e11f1235e4e8e0.png",
     "static/media/html5.png": "/static/media/html5.0bd57f175738c3123c96.png",
     "static/media/latex-logo.png": "/static/media/latex-logo.da334e62bdd80c6f8a44.png",
@@ -16,12 +16,12 @@
     "static/media/pytorch-logo.png": "/static/media/pytorch-logo.f51803954e5c4cbff903.png",
     "static/media/js-logo.png": "/static/media/js-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.f41edc01.css.map": "/static/css/main.f41edc01.css.map",
-    "main.38b50a16.js.map": "/static/js/main.38b50a16.js.map",
+    "main.a285c464.css.map": "/static/css/main.a285c464.css.map",
+    "main.1f900f37.js.map": "/static/js/main.1f900f37.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f41edc01.css",
-    "static/js/main.38b50a16.js"
+    "static/css/main.a285c464.css",
+    "static/js/main.1f900f37.js"
   ]
 }
