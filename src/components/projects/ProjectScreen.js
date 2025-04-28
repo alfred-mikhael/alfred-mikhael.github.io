@@ -1,63 +1,41 @@
 import "./ProjectScreen.css";
-import reactLogo from "../../images/React-icon.svg.png";
-import htmlLogo from "../../images/html5.png";
-import cssLogo from "../../images/CSS3_logo.svg.png";
-import pythonLogo from "../../images/Python-logo-notext.svg.png";
-import jsLogo from "../../images/jslogo.jpg";
-import flutterLogo from "../../images/Google-flutter-logo.png";
-import javaLogo from "../../images/java-logo-1.png";
-import firebaseLogo from "../../images/firebase-logo.png";
+import Footer from "../footer/footer.js"
+import ProjectDetails from "../projectDetails/projectDetails.js";
 
 const ProjectScreen = () => {
     return (
-        <div className="fade-component">
-            <div className="project-screen">
-                <h1>
-                    My Projects
-                </h1>
-                <div className="grid">
-                    <a href="https://github.com/SlothfulAlfred/SlothfulAlfred.github.io" target="_blank" rel="noreferrer">
-                        <div className="grid-item">
-
-                        </div>
-                    </a>
-                    <a href="https://github.com/CSC207-2022F-UofT/course-project-translate-chat-program" target="_blank" rel="noreferrer">
-                        <div className="grid-item">
-=
-                        </div>
-                    </a>
-                    <a href="https://github.com/SlothfulAlfred/quiz_app" target="_blank" rel="noreferrer">
-                        <div className="grid-item">
-
-                        </div>
-                    </a>
-                    <a href="https://github.com/Caspian-9/SentimentAnalysis" target="_blank" rel="noreferrer">
-                        <div className="grid-item">
-
-                        </div>
-                    </a>
-                </div>
+        <div className="project-page">
+            <div className="project-page-content">
+                <ProjectDetails
+                    name="Hypergeometric Summation"
+                    date="Apr. 2025"
+                    languages="Languages: C"
+                    desc="A basic computer algebra system which can manipulate polynomials and implements Zeilberger's algorithm. WIP."
+                    link="https://github.com/alfred-mikhael/hypergeom"
+                />
+                <ProjectDetails
+                    name="Personal Website"
+                    date="Apr. 2025"
+                    languages="Languages: JS, HTML, CSS"
+                    desc="Personal website hosted on github pages with information about myself."
+                    link="https://github.com/alfred-mikhael/alfred-mikhael.github.io"
+                />
+                <ProjectDetails
+                    name="Ray Tracer"
+                    date="June. 2024"
+                    languages="Languages: C++"
+                    desc="Ray tracer implementation following 'Ray tracing in one weekend' and 'Ray tracing in one week' books. Implemented state-of-the-art BVH construction heuristics and profiled code with Valgrind to increase performance."
+                    link="https://github.com/alfred-mikhael/ray-tracing"
+                />
+                <ProjectDetails
+                    name="Deep Learning Assisted Acoustic Side Channel Attack"
+                    date="Apr. 2024"
+                    languages="Languages: Python"
+                    desc="Trained custom CNN and VGG16 model on keystroke audio in order to predict which key is being pressed. Final models had accuracy of over 80%. Joint work with 3 other students."
+                    link="https://colab.research.google.com/drive/1Zs1kNkUWQVZjfRq_AKnRx44tppacQTke?usp=sharing"
+                />
             </div>
-
-            <h1>
-                What I'm currently learning:
-            </h1>
-            <ul className="learning-list">
-                <li>
-                    Machine Learning
-                </li>
-                <li>
-                    Mathematica (Computer Algebra System)
-                </li>
-                <li>
-                    Differential Equations
-                </li>
-                <li>
-                    Computer Architecture
-                </li>
-            </ul>
-            <div style={{height: "10vh"}}>
-            </div>
+            <Footer />
         </div>
     );
 }

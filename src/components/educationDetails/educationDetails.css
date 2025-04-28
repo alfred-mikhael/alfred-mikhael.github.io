@@ -1,9 +1,11 @@
 .education-details {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
+    text-align: left;
     margin-bottom: 1em;
     width: vw;
+    gap: 5%;
 }
 
 .education-details-secondary {
