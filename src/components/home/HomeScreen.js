@@ -55,9 +55,9 @@ const HomeScreen = () => {
                         algorithms by using pseudorandom objects, like expander graphs?"
                     />
                     <Dropdown 
-                        title="Combinatorics and Graph Theory"
+                        title="Combinatorics"
                         text="Combinatorics is the mathematical field of counting. The beauty of combinatorics is that problems which are 
-                        very easy to explain turn out to be very difficult to solve, and vital in other fields of math. Graph theory is the 
+                        very easy to explain turn out to be very difficult to solve, and vital in other fields of math. Graph theory is a subfield of combinatorics, and is the 
                         study of networks. This is both a practical and interesting field, as networks are vital in day-to-day life."
                     />
 
@@ -110,9 +110,9 @@ const HomeScreen = () => {
                         Other Things I'm Interested In
                     </h2>
                     <ul>
-                        <li> Computer Algebra Systems </li>
+                        <li> Computational Complexity</li>
                         <li> Quantum Computing </li>
-                        <li> Additive Number Theory </li>
+                        <li> Computer Algebra Systems </li>
                         <li> Cryptography, especially lattice-based </li>
                     </ul>
                     <h2> Favorite Tecnical Books </h2>
