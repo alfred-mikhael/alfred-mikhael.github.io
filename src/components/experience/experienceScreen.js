@@ -28,7 +28,7 @@ export default function ExperienceScreen() {
                     name="Aquatic Deck Coordinator"
                     date="Jan. 2021 - Present"
                     major="City of Mississauga"
-                    desc="Ensure smooth and safe delivery of aquatic programs in the city of Mississauga."
+                    desc="Ensured smooth and safe delivery of aquatic programs in the city of Mississauga."
                 />
             </div>
             <Footer />

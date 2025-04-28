@@ -30,7 +30,7 @@ const HomeScreen = () => {
 
                     <div className="header-section">
                         <p>
-                            I am an incoming master's student in Cheriton school of computer science at the University of Waterloo studying theoretical computer science and spectral graph theory under the supervision of
+                            I am an incoming master's student in Cheriton School of Computer Science at the University of Waterloo studying theoretical computer science and spectral graph theory under the supervision of
                             Prof. Lap Chi Lau. 
                             Before that, I was an undergraduate at the University of Toronto where I studied math and computer science, and did research under the 
                             supervision of Prof. Swastik Kopparty and Prof. Aleskandar Nikolov.

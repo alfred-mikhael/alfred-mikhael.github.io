@@ -1,11 +1,18 @@
 .project-details {
-    display: grid;
+    display: flex;
+    flex-direction: column;;
     justify-content: space-between;
-    grid-template-columns: auto auto;
     text-align: left;
     margin-bottom: 1em;
-    width: vw;
-    gap: 5%;
+    width: 80vw;
+    gap: 0.5em;
+}
+
+.project-details-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .project-details-secondary {
