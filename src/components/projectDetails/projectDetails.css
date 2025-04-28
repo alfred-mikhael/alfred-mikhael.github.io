@@ -1,0 +1,14 @@
+.project-details {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    text-align: left;
+    margin-bottom: 1em;
+    width: vw;
+    gap: 5%;
+}
+
+.project-details-secondary {
+    font-size: 0.8em;
+    color: rgb(73, 73, 73);
+}

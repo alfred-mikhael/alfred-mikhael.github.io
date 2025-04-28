@@ -1,0 +1,13 @@
+.body {
+    position: relative;
+    width: 100vw;
+}
+
+.exerience-page {
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.experience-page-content {
+    padding-bottom: 69px;
+}
