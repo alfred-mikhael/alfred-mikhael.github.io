@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f56d1b0b.css",
-    "main.js": "/static/js/main.5785fa63.js",
+    "main.css": "/static/css/main.615bbf2d.css",
+    "main.js": "/static/js/main.45c3c21b.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/cover-photo.jpg": "/static/media/cover-photo.98ba9239d605bbaaec8a.jpg",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.8a6fc0a24a800d1e0f4a.png",
@@ -16,12 +16,12 @@
     "static/media/pytorch-logo.png": "/static/media/pytorch-logo.f51803954e5c4cbff903.png",
     "static/media/js-logo.png": "/static/media/js-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.f56d1b0b.css.map": "/static/css/main.f56d1b0b.css.map",
-    "main.5785fa63.js.map": "/static/js/main.5785fa63.js.map",
+    "main.615bbf2d.css.map": "/static/css/main.615bbf2d.css.map",
+    "main.45c3c21b.js.map": "/static/js/main.45c3c21b.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f56d1b0b.css",
-    "static/js/main.5785fa63.js"
+    "static/css/main.615bbf2d.css",
+    "static/js/main.45c3c21b.js"
   ]
 }
