@@ -115,12 +115,6 @@ const HomeScreen = () => {
                         <li> Computer Algebra Systems </li>
                         <li> Cryptography, especially lattice-based </li>
                     </ul>
-                    <h2> Favorite Tecnical Books </h2>
-                    <ul>
-                        <li> The Probabilistic Method, Alon and Spencer </li>
-                        <li> Concrete Mathematics, Knuth, Patashnik, and Graham </li>
-                        <li> Introduction To The Theory Of Computation, Sipser</li>
-                    </ul>
             </div>
             <Footer/>
         </div>
