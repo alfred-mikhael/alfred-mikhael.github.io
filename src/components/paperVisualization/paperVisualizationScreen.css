@@ -1,0 +1,19 @@
+.body {
+    position: relative;
+    width: 100vw;
+}
+
+.paper-visualization-page {
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.paper-visualization-page-content {
+    padding-bottom: 60px;
+}
+
+.js-plotly-plot {
+    width: 40vw;
+    aspect-ratio: 2/1.7;
+    align-self: center;
+}

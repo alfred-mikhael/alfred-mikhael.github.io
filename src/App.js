@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar.js';
 import ProjectScreen from "./components/projects/ProjectScreen.js"
 import ResearchScreen from './components/research/research.js';
 import EducationScreen from './components/education/education.js';
+import PaperVisualizationScreen from "./components/paperVisualization/paperVisualizationScreen.js"
 
 import { Route, Routes } from 'react-router-dom';
 import ExperienceScreen from './components/experience/experienceScreen.js';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projects" element={<ProjectScreen />} />
             <Route path="/education" element={<EducationScreen />} />
             <Route path="/research" element={<ResearchScreen/>}/>
+            <Route path="/paper-visualization" element={<PaperVisualizationScreen/>}/>
           </Routes>
         </div>
       </div>

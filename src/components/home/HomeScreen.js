@@ -1,6 +1,5 @@
 import "./HomeScreen.css";
 
-import EducationDetails from "../educationDetails/educationDetails.js";
 import Footer from "../footer/footer.js"; 
 
 import reactLogo from "../../images/React-icon.svg.png";
