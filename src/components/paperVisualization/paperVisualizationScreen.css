@@ -5,15 +5,80 @@
 
 .paper-visualization-page {
     width: 100vw;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .paper-visualization-page-content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 0px;
     padding-bottom: 60px;
+    padding-right: 10px;
+    padding-left: 1vw;
 }
 
-.js-plotly-plot {
-    width: 40vw;
-    aspect-ratio: 2/1.7;
-    align-self: center;
+.map {
+    position: relative;
+    width: 100%;
+    height: 89vh;
+    align-self: start;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 6px;
+    margin-top: 1vh;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    box-sizing: border-box;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 2vh;
+}
+
+.search-bar {
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 2em;
+    padding: 8px 10px;
+    margin-top: 1rem;
+}
+.sidebar {
+    flex: 1;
+    min-height: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 6px;
+    text-align: left;
+    font-size: 0.5em;
+}
+
+@media (max-width: 800px) {
+    .paper-visualization-page-content {
+        grid-template-columns: 1fr;
+    }
+
+    .search-area {
+        max-height: 20vh;
+        height: auto;
+    }
+    .sidebar {
+        flex: none;
+        height: auto;
+    }
+}
+
+.paper-point-tooltip {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    padding: 6px 8px;
+    color: rgba(0, 0, 0, 1.0);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    font-size: 1rem;
+    transform: translate(8px, 8px);
+    white-space: nowrap;
 }
