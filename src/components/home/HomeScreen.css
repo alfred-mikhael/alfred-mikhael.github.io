@@ -20,8 +20,9 @@
     /* color: #a3b5d6; */
 }
 
-.my-name {
+.highlighted-text {
     color: #E59500;
+    font-weight: bold;
 } 
 
 .tech-skills {

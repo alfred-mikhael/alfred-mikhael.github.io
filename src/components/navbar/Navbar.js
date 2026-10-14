@@ -40,6 +40,11 @@ const Navbar = () => {
                             Education
                         </Link>
                     </li>
+                    <li>
+                        <Link onClick={onToggle} className={'nav-item'} to="/paper-visualization">
+                            Visualization
+                        </Link>
+                    </li>
                 </ul>
                 <button onClick={onToggle} className="hamburger-button">
                     <div className={`hamburger ${isOpen ? "open" : ""}`}>

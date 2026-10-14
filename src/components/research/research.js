@@ -6,6 +6,12 @@ export default function ResearchScreen() {
     return (
         <div className="research-page">
             <div className="research-page-content">
+                <ProjectDetails
+                    name="Constructive algorithms and complexity results in topological combinatorics"
+                    languages="Lap Chi Lau, Alfred Mikhael"
+                    date="Sep. 2027"
+                    desc={"We find constructive polynomial time algorithms for problems in topological combinatorics which previously only had existence proofs. We obtain a bevy of new complexity results for similar problems."}
+                />
                 <ProjectDetails 
                     name="Fast algorithms for geometric matching and related problems"
                     link="https://drive.google.com/file/d/1V7FHsWCHPQPdGdqQLGl0_4I-3DXPhS2r/view?usp=sharing"

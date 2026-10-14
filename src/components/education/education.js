@@ -11,14 +11,27 @@ export default function EducationScreen() {
                     date="2025-2027"
                     major="M.Math in Computer Science"
                     desc="Studying spectral graph theory and approximation algorithms under the supervision of Prof. Lap Chi Lau"
+                    notes={"Relevant Coursework: CS798: Multicore Programming, CS854: Transport Layer Protocols, CS860: Coding Theory"}
                 /> 
                 <EducationDetails 
                     name="University of Toronto" 
                     date="2021-2025"
                     major="HBSc. in Computer Science and Mathematics"
+                    desc="GPA 3.99/4.0"
+                    notes={"Relevant Coursework: CS457: Computer Networks, CS413: Deep Learning, CS412: Probabilistic Machine Learning"}
                 />
                 <hr></hr>
                 <h3> Awards </h3>
+                <EducationDetails 
+                    name="Queen Elizabeth II Graduate Scholarship in Science and Technology (QEII-GSST)" 
+                    date="May 2026" 
+                    major="$15000"
+                />
+                <EducationDetails 
+                    name={"President's Graduate Scholarship"} 
+                    date={"May 2026"} 
+                    major={"$10000"}
+                />
                 <EducationDetails
                     name="Dean's List Scholar"
                     date="June 2022 - June 2025"
