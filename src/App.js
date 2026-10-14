@@ -4,10 +4,12 @@ import Navbar from './components/navbar/Navbar.js';
 import ProjectScreen from "./components/projects/ProjectScreen.js"
 import ResearchScreen from './components/research/research.js';
 import EducationScreen from './components/education/education.js';
-import PaperVisualizationScreen from "./components/paperVisualization/paperVisualizationScreen.js"
+import { lazy, Suspense } from 'react';
 
 import { Route, Routes, useLocation } from 'react-router-dom';
 import ExperienceScreen from './components/experience/experienceScreen.js';
+
+const PaperVisualizationScreen = lazy(() => import('./components/paperVisualization/paperVisualizationScreen.js'));
 
 function App() {
   const location = useLocation();
@@ -31,12 +33,14 @@ function App() {
             <Route
               path="/paper-visualization"
               element={
-                <PaperVisualizationScreen
-                  root_url={`${process.env.PUBLIC_URL}`}
-                  data_file_name="coords.csv.gz"
-                  label_file_name="clusters.csv.gz"
-                  centroid_file_name="centroids.csv.gz"
-                />
+                <Suspense fallback={<p role="status">Loading visualization…</p>}>
+                  <PaperVisualizationScreen
+                    root_url={"https://fido.mikhaels.org"}
+                    data_file_name="coords.csv.gz"
+                    label_file_name="clusters.csv.gz"
+                    centroid_file_name="centroids.csv.gz"
+                  />
+                </Suspense>
               }
             />
           </Routes>

@@ -37,7 +37,7 @@ const HomeScreen = () => {
                             to solve real-world problems, and in writing performant code that brings solutions to scale. 
                             <span className="highlighted-text"> I am looking for software engineering and machine learning engineering opportunities starting in 2027.</span>
                         </p>
-                        <img className="cover-photo" src={CoverPhoto}></img>
+                        <img className="cover-photo" src={CoverPhoto} alt="Alfred Mikhael" />
                     </div>
 
                     <h2> Research Interests </h2>

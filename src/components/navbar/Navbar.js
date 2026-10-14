@@ -8,46 +8,52 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     function onToggle() {
-        setIsOpen(!isOpen);
+        setIsOpen(open => !open);
+    }
+
+    function closeMenu() {
+        setIsOpen(false);
     }
 
     return (
         <div>
             <nav className='navbar'>
-                <ul className={`navbar-items ${isOpen ? "open" : ""}`}>
+                <ul id="primary-navigation" className={`navbar-items ${isOpen ? "open" : ""}`}>
                     <li>
-                        <Link onClick={onToggle} className={`nav-item`} to="/">
+                        <Link onClick={closeMenu} className={`nav-item`} to="/">
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={onToggle} className={`nav-item`} to="/experience">
+                        <Link onClick={closeMenu} className={`nav-item`} to="/experience">
                             Experience
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={onToggle} className={`nav-item`} to='/projects'>
+                        <Link onClick={closeMenu} className={`nav-item`} to='/projects'>
                             Projects
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={onToggle} className={`nav-item`} to="/research">
+                        <Link onClick={closeMenu} className={`nav-item`} to="/research">
                             Research
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={onToggle} className={`nav-item`} to="/education">
+                        <Link onClick={closeMenu} className={`nav-item`} to="/education">
                             Education
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={onToggle} className={'nav-item'} to="/paper-visualization">
+                        <Link onClick={closeMenu} className={'nav-item'} to="/paper-visualization">
                             Visualization
                         </Link>
                     </li>
                 </ul>
-                <button onClick={onToggle} className="hamburger-button">
-                    <div className={`hamburger ${isOpen ? "open" : ""}`}>
+                <button type="button" onClick={onToggle} className="hamburger-button"
+                    aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                    aria-expanded={isOpen} aria-controls="primary-navigation">
+                    <div aria-hidden="true" className={`hamburger ${isOpen ? "open" : ""}`}>
                         <span className={`hamburger-bar ${isOpen ? "open" : ""}`}></span>
                         <span className={`hamburger-bar middle ${isOpen ? "open" : ""}`}></span>
                         <span className={`hamburger-bar ${isOpen ? "open" : ""}`}></span>
