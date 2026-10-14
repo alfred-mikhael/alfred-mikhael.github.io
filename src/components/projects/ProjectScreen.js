@@ -9,10 +9,17 @@ const ProjectScreen = () => {
                 <ProjectDetails
                     name="Paper Clustering and Visualization"
                     date="Oct. 2026"
-                    languages="Languages: Python"
+                    languages="Python"
                     desc="An automated paper discovery and embedding system. Visualize papers by their topic area. Search for papers which use similar techniques across different fields.
                     See a demonstration in the Visualization tab. WIP."
                     link="https://github.com/alfred-mikhael/paper-clustering"
+                />
+                <ProjectDetails
+                    name="Implementation of CTCP"
+                    date="Dec. 2025"
+                    languages="C++"
+                    desc="An efficient implementation of the CTCP transport layer protocol built for the ns-3 simulator as a final project for CS856: Transport Layer Protocols."
+                    link="https://github.com/alfred-mikhael/ctcp-implementation"
                 />
                 <ProjectDetails
                     name={"Expander Decomposition in NetworkX"}
