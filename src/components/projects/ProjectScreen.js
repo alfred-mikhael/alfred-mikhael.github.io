@@ -8,11 +8,18 @@ const ProjectScreen = () => {
             <div className="project-page-content">
                 <ProjectDetails
                     name="Paper Clustering and Visualization"
-                    date="Sep. 2026"
+                    date="Oct. 2026"
                     languages="Languages: Python"
                     desc="An automated paper discovery and embedding system. Visualize papers by their topic area. Search for papers which use similar techniques across different fields.
                     See a demonstration in the Visualization tab. WIP."
                     link="https://github.com/alfred-mikhael/paper-clustering"
+                />
+                <ProjectDetails
+                    name={"Expander Decomposition in NetworkX"}
+                    date={"Oct. 2026"}
+                    languages={"Python"}
+                    desc={"An efficient implementation of the expander decomposition algorithm in the open-source networkx repository. Not yet merged."}
+                    link={"https://github.com/alfred-mikhael/networkx/tree/expander_decomp"}
                 />
                 <ProjectDetails
                     name="Personal Website"
