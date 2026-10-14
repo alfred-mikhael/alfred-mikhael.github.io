@@ -1,13 +1,17 @@
 .App {
   text-align: center;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow-x: clip;
 }
 
 .App-header {
   background-color: #efebdd;
   /* Footer height is 69px */
-  min-height: calc(95vh - 69px);
+  /* min-height: calc(95vh - 69px); */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;

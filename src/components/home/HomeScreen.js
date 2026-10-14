@@ -1,6 +1,5 @@
 import "./HomeScreen.css";
 
-import EducationDetails from "../educationDetails/educationDetails.js";
 import Footer from "../footer/footer.js"; 
 
 import reactLogo from "../../images/React-icon.svg.png";
@@ -25,15 +24,18 @@ const HomeScreen = () => {
         <div className="home-page">
             <div className="home-page-content">
                     <h1 className="title">
-                        My name is <span className="my-name">Alfred Mikhael</span>
+                        My name is <span className="highlighted-text">Alfred Mikhael</span>
                     </h1>   
 
                     <div className="header-section">
                         <p>
-                            I am an incoming master's student in Cheriton School of Computer Science at the University of Waterloo studying theoretical computer science and spectral graph theory under the supervision of
+                            I am a master's student in Cheriton School of Computer Science at the University of Waterloo studying spectral graph theory and approximation algorithms under the supervision of
                             Prof. Lap Chi Lau. 
                             Before that, I was an undergraduate at the University of Toronto where I studied math and computer science, and did research under the 
-                            supervision of Prof. Swastik Kopparty and Prof. Aleskandar Nikolov.
+                            supervision of Prof. Swastik Kopparty and Prof. Aleskandar Nikolov. <br></br><br></br>
+                            Recently, I am interested in applying machine learning alongside theoretical tools 
+                            to solve real-world problems, and in writing performant code that brings solutions to scale. 
+                            <span className="highlighted-text"> I am looking for software engineering and machine learning engineering opportunities starting in 2027.</span>
                         </p>
                         <img className="cover-photo" src={CoverPhoto}></img>
                     </div>
@@ -110,9 +112,9 @@ const HomeScreen = () => {
                         Other Things I'm Interested In
                     </h2>
                     <ul>
-                        <li> Computational Complexity</li>
-                        <li> Quantum Computing </li>
-                        <li> Computer Algebra Systems </li>
+                        <li> Machine learning and techniques for data visualization </li>
+                        <li> Distributed lock-free data structures </li>
+                        <li> Better coding techniques for networks, CTCP and related transport layer protocols </li>
                         <li> Cryptography, especially lattice-based </li>
                     </ul>
             </div>

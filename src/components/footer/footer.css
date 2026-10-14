@@ -4,11 +4,12 @@
     left: 0;
     width: 100%;
     background: #e7e6cd;
-    max-height: fit-content;
+    z-index: 10;
+    /* max-height: fit-content; */
 }
 
 .footer-buttons {
-    padding-left: 10%;
+    padding-left: 3%;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: right;

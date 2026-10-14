@@ -7,11 +7,19 @@ const ProjectScreen = () => {
         <div className="project-page">
             <div className="project-page-content">
                 <ProjectDetails
-                    name="Hypergeometric Summation"
-                    date="Apr. 2025"
-                    languages="Languages: C"
-                    desc="A basic computer algebra system which can manipulate polynomials and implements Zeilberger's algorithm. WIP."
-                    link="https://github.com/alfred-mikhael/hypergeom"
+                    name="Paper Clustering and Visualization"
+                    date="Oct. 2026"
+                    languages="Languages: Python"
+                    desc="An automated paper discovery and embedding system. Visualize papers by their topic area. Search for papers which use similar techniques across different fields.
+                    See a demonstration in the Visualization tab. WIP."
+                    link="https://github.com/alfred-mikhael/paper-clustering"
+                />
+                <ProjectDetails
+                    name={"Expander Decomposition in NetworkX"}
+                    date={"Oct. 2026"}
+                    languages={"Python"}
+                    desc={"An efficient implementation of the expander decomposition algorithm in the open-source networkx repository. Not yet merged."}
+                    link={"https://github.com/alfred-mikhael/networkx/tree/expander_decomp"}
                 />
                 <ProjectDetails
                     name="Personal Website"
@@ -24,7 +32,7 @@ const ProjectScreen = () => {
                     name="Ray Tracer"
                     date="June. 2024"
                     languages="Languages: C++"
-                    desc="Ray tracer implementation following 'Ray tracing in one weekend' and 'Ray tracing in one week' books. Implemented state-of-the-art BVH construction heuristics and profiled code with Valgrind to increase performance."
+                    desc="Implemented state-of-the-art BVH construction heuristics and profiled code with Valgrind to increase performance."
                     link="https://github.com/alfred-mikhael/ray-tracing"
                 />
                 <ProjectDetails
