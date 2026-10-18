@@ -5,9 +5,8 @@ import "./paperVisualizationScreen.css"
 import React, {useEffect, useMemo, useRef, useState} from 'react';
 import Papa from 'papaparse';
 import {DeckGL} from '@deck.gl/react';
-import {COORDINATE_SYSTEM, OrthographicView} from '@deck.gl/core';
+import {COORDINATE_SYSTEM, OrthographicView, OrthographicViewport} from '@deck.gl/core';
 import {ScatterplotLayer, TextLayer} from '@deck.gl/layers';
-import {CollisionFilterExtension} from '@deck.gl/extensions';
 
 const INITIAL_VIEW_STATE = {
     target: [0, 0, 0],
@@ -16,6 +15,32 @@ const INITIAL_VIEW_STATE = {
     maxZoom: 20
 };
 const PLOT_VIEW = new OrthographicView({id: 'paper-plot', flipY: false});
+const LABEL_SIZE = 18;
+const LABEL_FONT = 'Monaco, monospace';
+const LABEL_PADDING = [8, 8];
+const LABEL_GAP = 4;
+
+function selectVisibleLabels(labels, viewport) {
+    const occupied = [];
+    return labels.filter(({label, width, height}) => {
+        const [x, y] = viewport.project([label.x, label.y]);
+        const box = {
+            left: x - width / 2,
+            right: x + width / 2,
+            top: y - height / 2,
+            bottom: y + height / 2
+        };
+        // Offscreen labels must not suppress labels inside the viewport.
+        if (box.right < 0 || box.left > viewport.width ||
+            box.bottom < 0 || box.top > viewport.height) return false;
+        if (occupied.some(other =>
+            box.left < other.right && box.right > other.left &&
+            box.top < other.bottom && box.bottom > other.top
+        )) return false;
+        occupied.push(box);
+        return true;
+    }).map(({label}) => label);
+}
 
 async function fetchCsv(root_url, file_name, requiredColumns, signal) {
     const url = `${root_url.replace(/\/$/, "")}/${file_name.replace(/^\//, "")}`;
@@ -79,6 +104,46 @@ export default function PaperVisualizationScreen({
     const [clusterLabels, setClusterLabels] = useState([]);
     const [loadState, setLoadState] = useState({loading: true, error: ''});
     const mapRef = useRef(null);
+    const [plotSize, setPlotSize] = useState({width: 0, height: 0});
+
+    useEffect(() => {
+        const observer = new ResizeObserver(([entry]) => {
+            const {width, height} = entry.contentRect;
+            setPlotSize({width, height});
+        });
+        observer.observe(mapRef.current);
+        return () => observer.disconnect();
+    }, []);
+
+    const measuredLabels = useMemo(() => {
+        if (!clusterLabels.length) return [];
+        const context = document.createElement('canvas').getContext('2d');
+        // Match deck.gl's atlas size and per-character advances (no kerning).
+        context.font = `normal 64px ${LABEL_FONT}`;
+        return [...clusterLabels]
+            .sort((a, b) => b.size - a.size || a.cluster_id.localeCompare(b.cluster_id))
+            .filter(label => label.label.trim())
+            .map(label => {
+                const lines = label.label.split('\n');
+                const width = Math.max(...lines.map(line => Array.from(line).reduce(
+                    (sum, character) => sum + context.measureText(character).width, 0
+                ))) * LABEL_SIZE / 64;
+                return {
+                    label,
+                    width: width + 2 * LABEL_PADDING[0] + LABEL_GAP,
+                    height: lines.length * LABEL_SIZE + 2 * LABEL_PADDING[1] + LABEL_GAP
+                };
+            });
+    }, [clusterLabels]);
+
+    const visibleLabels = useMemo(() => {
+        if (!plotSize.width || !plotSize.height) return [];
+        return selectVisibleLabels(measuredLabels, new OrthographicViewport({
+            ...viewState,
+            ...plotSize,
+            flipY: false
+        }));
+    }, [measuredLabels, viewState, plotSize]);
 
     useEffect(() => {
         const controller = new AbortController();
@@ -266,19 +331,17 @@ export default function PaperVisualizationScreen({
         }),
         new TextLayer({
             id: "paper-labels",
-            data: clusterLabels,
+            data: visibleLabels,
             coordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
             getPosition: label => [label.x, label.y],
             getText: label => label.label,
-            getSize: 18,
+            getSize: LABEL_SIZE,
+            fontFamily: LABEL_FONT,
             characterSet: 'auto',
             getColor: [0, 0, 0],
-            getBackgroundColor: [255, 255, 255, 150],
-            backgroundPadding: [4, 2],
-            background: true,
-            collisionEnabled: true,
-            getCollisionPriority: label => label.size,
-            extensions: [new CollisionFilterExtension()]
+            getBackgroundColor: [255, 255, 255, 200],
+            backgroundPadding: LABEL_PADDING,
+            background: true
         })
     ];
     function renderTooltip({x, y, title, arxiv_id}) {
